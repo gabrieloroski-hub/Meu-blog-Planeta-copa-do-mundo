@@ -38,8 +38,17 @@ height: 250px;
  <h1>Meu Primeiro Post</h1>
     Por: Gabriel Oroski
 <p>Bem-vindos ao maior blog sobre copas do mundo do Brasil </p>
+        <button>❤️<span>0</span></button>
 <img src="image.png" alt="">
     </main>
 
 </body>
+    <script>
+        const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+    </script>
 </html>
